@@ -13,9 +13,13 @@
     "@ionic/react": "^8.7.17",
     "@tailwindcss/vite": "^4.1.18",
     "axios": "^1.13.4",
+    "clsx": "^2.1.1",
+    "i": "^0.3.7",
     "ionicons": "^8.0.13",
+    "npm": "^11.8.0",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-toastify": "^11.0.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
