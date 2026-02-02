@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ionic/react": "^8.7.17",
     "@tailwindcss/vite": "^4.1.18",
+    "axios": "^1.13.4",
+    "ionicons": "^8.0.13",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
