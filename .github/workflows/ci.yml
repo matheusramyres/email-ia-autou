@@ -4,6 +4,10 @@ on:
   pull_request:
     branches:
       - develop
+      - main
+  push:
+    branches:
+      - release/*
 
 jobs:
   build:
