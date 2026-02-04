@@ -1,9 +1,12 @@
 import axios from 'axios';
 
+const baseUrl = import.meta.env.VITE_BASE_URL;
+const apiKey = import.meta.env.VITE_API_KEY;
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_BASE_URL,
+  baseURL: baseUrl,
   headers: {
-    Authorization: import.meta.env.VITE_API_KEY,
+    Authorization: `Bearer ${apiKey}`,
   },
 });
 
