@@ -1,73 +1,117 @@
-# React + TypeScript + Vite
+# 📧 Email AI Classifier – AutoU Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web que utiliza Inteligência Artificial para **classificar emails automaticamente** e **sugerir respostas adequadas**, reduzindo o trabalho manual de equipes que lidam com grande volume de mensagens.
 
-Currently, two official plugins are available:
+Projeto desenvolvido como parte do **desafio técnico da AutoU**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📑 Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Upload de emails em formato `.txt` ou `.pdf`
+- Inserção direta de texto do email
+- Classificação automática do email em categorias:
+  - Suporte
+  - Reclamação
+  - Parceria
+  - Vendas
+  - Cobrança
+  - Spam
+- Classificação final como:
+  - **Produtivo**
+  - **Improdutivo**
+- Sugestão de resposta automática baseada na categoria
+- Exibição do nível de confiança da IA
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Tecnologias utilizadas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- ⚛️ **React 19**
+- ⚡ **Vite**
+- 🧠 **TypeScript**
+- 📱 **Ionic React**
+- 🎨 **Tailwind CSS**
+- 🌐 **Axios**
+- 🔔 **React Toastify**
+- 🧩 **Ionicons**
+- 🧼 **ESLint**
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📦 Pré-requisitos
+
+Antes de começar, você precisa ter instalado:
+
+- **Node.js** (recomendado: versão LTS)
+- **yarn** ou **npm**
+
+---
+
+## 🧩 Variáveis de ambiente
+
+Dentro do arquivo **.env.example** na raiz do projeto preenchas as variaveis ante antes de rodar o projeto.
+
+```bash
+API_KEY=
+BASE_URL=
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **API_KEY:** autorização para acessar a API externa.
+- **BASE_URL:** base URL da api externa
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ▶️ Como rodar o projeto
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clone o repositório e dentro da pasta do projeto execute os comandos abaicxo para instalar as dependências:
+
+```bash
+yarn install
+yarn dev
 ```
+
+A aplicação estará disponível em:
+
+```bash
+http://localhost:5173
+```
+
+---
+
+## ⚙️ Build para produção
+
+```bash
+yarn build
+```
+
+Pré-visualizar o build:
+
+```bash
+yarn preview
+```
+
+### 🧹 Lint
+
+```bash
+yarn lint
+```
+
+---
+
+## 🔗 Link de produção
+
+- Produção: [Link](https://69824fc5578f24f475eb2690--email-ia.netlify.app/)
+
+---
+
+## 🔗 Link da api (produção e Github)
+
+- **Produção:** [Link](https://backend-ia-email.onrender.com/)
+- **Github:** [Link](https://github.com/matheusramyres/backend-ia-email)
+
+---
+
+## 👨‍💻 Autor
+
+### Matheus Ramyres da Silva Braz
+
+Desenvolvedor Full Stack
