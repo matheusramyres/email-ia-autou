@@ -99,7 +99,7 @@ yarn lint
 
 ## 🔗 Link de produção
 
-- Produção: [Link](https://69824fc5578f24f475eb2690--email-ia.netlify.app/)
+- Produção: [Link](https://email-ia.netlify.app/)
 
 ---
 
